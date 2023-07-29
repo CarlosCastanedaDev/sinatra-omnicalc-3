@@ -1,0 +1,24 @@
+<h1>Should I take an umbrella?</h1>
+
+<dl>
+  <dt>User location</dt>
+  <dd><%= @location.capitalize%></dd>
+
+  <dt>Latitude</dt>
+  <dd><%= @lat%></dd>
+
+  <dt>Longitude</dt>
+  <dd><%= @lng%></dd>
+
+  <dt>Current temperature</dt>
+  <dd><%= @temp%></dd>
+
+  <dt>Current summary</dt>
+  <dd><%= @summary%></dd>
+
+  <dt>Umbrella?</dt>
+  <dd><%= @umbrella_required%></dd>
+</dl>
+
+
+<a href="/umbrella">Go back</a>
