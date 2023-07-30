@@ -11,6 +11,7 @@ get("/") do
   erb(:home)
 end
 
+# Weather 
 get('/umbrella') do
   erb(:umbrella)
 end
@@ -55,6 +56,8 @@ post('/process_umbrella') do
   erb(:umbrella_results)
 end
 
+
+# Single AI message
 get("/message") do
   erb(:single_chat)
 end
@@ -89,7 +92,15 @@ raw_response = HTTP.headers(request_headers_hash).post(
 erb(:message_results)
 end
 
-
+# Chat with multiple messages
 get("/chat") do
   erb(:chat)
+end
+
+post("/add_message_to_chat") do
+
+end
+
+post("/clear_chat") do
+
 end
